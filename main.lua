@@ -137,16 +137,16 @@ end
 
 --根据玩家按下的键位定义不同的方向
 function love.keypressed(key)
-  if(key=="a") then 
+  if(key=="a" and dir~=3) then 
     dir=2
   end
-  if(key=="d") then 
+  if(key=="d" and dir~=2) then 
     dir=3
   end
-  if(key=="w") then 
+  if(key=="w" and dir~=1) then 
     dir=0
   end
-  if(key=="s") then 
+  if(key=="s" and dir~=0) then 
     dir=1
   end
 end
